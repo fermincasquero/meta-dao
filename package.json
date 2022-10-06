@@ -7,7 +7,7 @@
     "test": "hardhat test",
     "client": "cd frontend && npm run start",
     "compile": "hardhat compile",
-    "deploy:hardhat": "hardhat run deploy ./scripts/deploy.ts",
+    "deploy:hardhat": "hardhat run ./scripts/deployAll.js",
     "deploy:ganache": "hardhat --network ganache run ./scripts/deploy.ts"
   },
   "keywords": [],

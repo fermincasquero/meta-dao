@@ -12,7 +12,16 @@ if (!mnemonic) {
 }
 
 const config = {
-  solidity: "0.8.9",
+  solidity: {
+    compilers: [
+      { version: "0.8.9" },
+      {
+        version: "0.6.6",
+        settings: { optimizer: { enabled: true, runs: 200 } },
+      },
+      { version: "0.5.16" },
+    ],
+  },
   networks: {
     hardhat: {
       chainId: 31337,
